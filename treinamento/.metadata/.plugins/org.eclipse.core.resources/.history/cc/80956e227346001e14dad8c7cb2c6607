@@ -1,0 +1,5 @@
+package br.treinamento.compliance.web.dto.mapper;
+
+public interface FisicaMapper {
+
+}

@@ -1,0 +1,14 @@
+package br.treinamento.compliance.web.dto.mapper;
+
+import org.mapstruct.Mapper;
+
+import br.treinamento.compliance.api.domain.Pessoa;
+import br.treinamento.compliance.web.dto.PessoaDto;
+
+@Mapper
+public interface JuridicaMapper {
+
+	Pessoa toEntity(PessoaDto pessoaDto);
+	PessoaDto toDto(Pessoa pessoa);
+	
+}

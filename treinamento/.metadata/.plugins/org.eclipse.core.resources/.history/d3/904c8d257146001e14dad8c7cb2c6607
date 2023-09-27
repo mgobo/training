@@ -1,0 +1,36 @@
+package br.treinamento.compliance.web.dto;
+
+import java.io.Serializable;
+
+import br.treinamento.compliance.api.domain.Pessoa;
+import jakarta.persistence.Column;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToOne;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class JuridicaDto implements Serializable{
+
+	private static final long serialVersionUID = 1L;
+	
+	@Id
+	@GeneratedValue(generator = "juridica_seq", strategy = GenerationType.SEQUENCE)
+	private Long id;
+	
+	@JoinColumn(name = "pessoa_id")
+	@OneToOne
+	private Pessoa pessoa;
+	
+	@Column(nullable = false, length = 14)
+	private String cnpj;
+
+}

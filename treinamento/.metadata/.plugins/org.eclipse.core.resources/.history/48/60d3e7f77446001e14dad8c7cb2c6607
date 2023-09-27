@@ -1,0 +1,48 @@
+package br.treinamento.compliance.web.dto.mapper;
+
+import br.treinamento.compliance.api.domain.Pessoa;
+import br.treinamento.compliance.web.dto.PessoaDto;
+import org.springframework.stereotype.Component;
+
+/*
+@Generated(
+    value = "org.mapstruct.ap.MappingProcessor",
+    date = "2023-08-29T11:01:17-0300",
+    comments = "version: 1.2.0.Final, compiler: javac, environment: Java 17.0.8 (Private Build)"
+)
+*/
+@Component
+public class PessoaMapperImpl implements PessoaMapper {
+
+    @Override
+    public Pessoa toEntity(PessoaDto pessoaDto) {
+        if ( pessoaDto == null ) {
+            return null;
+        }
+
+        Pessoa pessoa = new Pessoa();
+
+        pessoa.setId( pessoaDto.getId() );
+        pessoa.setNome( pessoaDto.getNome() );
+        pessoa.setSexo( pessoaDto.getSexo() );
+        pessoa.setTipoPessoa( pessoaDto.getTipoPessoa() );
+
+        return pessoa;
+    }
+
+    @Override
+    public PessoaDto toDto(Pessoa pessoa) {
+        if ( pessoa == null ) {
+            return null;
+        }
+
+        PessoaDto pessoaDto = new PessoaDto();
+
+        pessoaDto.setId( pessoa.getId() );
+        pessoaDto.setNome( pessoa.getNome() );
+        pessoaDto.setSexo( pessoa.getSexo() );
+        pessoaDto.setTipoPessoa( pessoa.getTipoPessoa() );
+
+        return pessoaDto;
+    }
+}

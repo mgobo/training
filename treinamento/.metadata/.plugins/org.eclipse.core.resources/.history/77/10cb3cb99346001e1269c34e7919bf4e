@@ -1,0 +1,7 @@
+package br.treinamento.compliance.web.dto;
+
+import java.io.Serializable;
+
+public class FilterPessoaDto implements Serializable {
+
+}

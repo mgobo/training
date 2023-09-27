@@ -1,0 +1,16 @@
+package br.com.compliance.poo.patterns.strategy;
+
+import br.com.compliance.poo.patterns.strategy.fn.CstExtracaoDocumentos;
+
+public class CstDocumentosStrategy {
+
+	private final CstExtracaoDocumentos cstExtracaoDocumentos;
+	
+	public CstDocumentosStrategy(CstExtracaoDocumentos cstExtracaoDocumentos) {
+		this.cstExtracaoDocumentos = cstExtracaoDocumentos;
+	}
+	
+	public void mudarTipoExtracao(CstExtracaoDocumentos cstExtracaoDocumentos) {
+		this.cstExtracaoDocumentos = cstExtracaoDocumentos;
+	}
+}

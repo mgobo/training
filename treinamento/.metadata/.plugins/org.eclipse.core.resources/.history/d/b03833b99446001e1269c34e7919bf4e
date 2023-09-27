@@ -1,0 +1,23 @@
+package br.treinamento.compliance.api.services;
+
+import java.io.Serializable;
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import br.treinamento.compliance.api.repository.PessoaRepository;
+import br.treinamento.compliance.web.dto.PessoaDto;
+import lombok.RequiredArgsConstructor;
+
+@Service
+@RequiredArgsConstructor
+public class PessoaService implements Serializable{
+	
+	private final static long serialVersionUID = 1l;
+	private final PessoaRepository pessoaRepository;
+	
+	public List<PessoaDto> aplicarFiltroBuscaPessoa(){
+		
+	}
+
+}

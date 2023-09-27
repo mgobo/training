@@ -1,0 +1,5 @@
+package br.treinamento.compliance.api.advices;
+
+public class CommonsExceptionHandler {
+
+}

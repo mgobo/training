@@ -1,0 +1,12 @@
+package br.treinamento.compliance.web.dto;
+
+import java.io.Serializable;
+
+public class FilterPessoaDto implements Serializable {
+
+	private final static long serialVersionUID = 1l;
+	
+	private String nome;
+	private String documento;
+	private String sexo;
+}
