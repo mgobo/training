@@ -1,9 +1,0 @@
-package br.com.compliance.poo.patterns.strategy;
-
-public class ConsumerDocumentosStrategy {
-
-	public static void main(String[] args) {
-		
-	}
-	
-}

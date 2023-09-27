@@ -1,5 +1,0 @@
-package br.com.compliance.poo.patterns.strategy;
-
-public class CstDocumentosStrategy {
-
-}
